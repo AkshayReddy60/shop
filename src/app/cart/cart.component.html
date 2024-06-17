@@ -1,0 +1,42 @@
+<div class="container">
+    <div *ngIf="cartService.getItems().length > 0; else emptyCart">
+      <table>
+        <thead>
+          <tr>
+            
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total Amount</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr *ngFor="let item of cartService.getItems(); trackBy: trackById">
+            <td>{{ item.name }}</td>
+            <td>
+              <button (click)="cartService.decrementQuantity(item.id)">-</button>
+              {{ item.quantity }}
+              <button (click)="cartService.incrementQuantity(item.id)">+</button>
+            </td>
+            <td>{{ item.price }}</td>
+            <td>{{ item.quantity * item.price }}</td>
+            <td>
+              <button (click)="deleteFromCart(item)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="kk">
+        <h1>Total:{{ cartService.getTotal() }}</h1>
+      </div>
+    </div>
+    <ng-template #emptyCart>
+      <div class="empty-cart">
+        <img src="/assets/cart-1.png" alt="Empty Cart">
+        <h3>Your cart is empty.</h3>
+      </div>
+    </ng-template>
+  </div>
+  

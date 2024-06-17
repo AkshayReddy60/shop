@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="left-column">
+        <button class="nav-button right" (click)="nextImage()">›</button>
+        <img *ngFor="let image of images; let i = index" [src]="image" [class.active]="i === currentIndex">
+        <button class="nav-button left" (click)="previousImage()">‹</button>
+    </div>
+
+    <div class="right-column">
+        <h2>Apple iPhone 15 Pro max (1 TB) - Blue Titanium</h2>
+        <h1>1,76,900 rs</h1>
+        <h4>Brand  :     Apple    </h4>
+        <h4>Model :     iphone 15 pro max    </h4>
+        <h4>operaation System :     iOS    </h4>
+        <h4>Cellular :   5G  </h4>
+        <h4>Network Service Provider : unlocked for All Carries  </h4>
+        <p></p>
+        
+        
+           <ul>
+            <li>FORGED IN TITANIUM — iPhone 15 Pro has a strong and light aerospace-grade titanium design with a textured matte-glass back.</li>
+            <li>It also features a Ceramic Shield front that’s tougher than any smartphone glass. And it’s splash, water, and dust resistant.</li>
+            <li>ADVANCED DISPLAY — The 6.1” Super Retina XDR display with ProMotion ramps up refresh rates to 120Hz when you need exceptional graphics performance.</li> 
+            <li>Dynamic Island bubbles up alerts and Live Notifications. Plus, with Always-On display, your Lock Screen stays glanceable, so you don’t have to tap it to stay in the know.</li>
+            <li> GAME-CHANGING A17 PRO CHIP — A Pro-class GPU makes mobile games feel so immersive, with rich environments and realistic characters.</li>
+            <li>A17 Pro is also incredibly efficient and helps to deliver amazing all-day battery life.</li>
+            <li>POWERFUL PRO CAMERA SYSTEM — Get incredible framing flexibility with 7 pro lenses. Capture super high-resolution photos with more color and detail using the 48MP Main camera. And take sharper close-ups from farther away.</li>
+            <li>CUSTOMIZABLE ACTION BUTTON — Action button is a fast track to your favorite feature.</li> 
+            <li>Just set the one you want, like Silent mode, Camera, Voice Memo, Shortcut, and more. Then press and hold to launch the action.</li>
+           </ul>
+
+           
+           <button routerLink="/buy">Buy Now</button>
+       
+    </div>
+</div>
+

@@ -1,0 +1,45 @@
+.card{
+    height: 60vh;
+    margin:25px;
+    padding:25px;
+}
+.center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.sy{
+    display: flex;
+    gap: 10px;
+}
+.kk{
+    padding:20px;
+}
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    text-align: center;
+    
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    cursor: pointer;
+  }

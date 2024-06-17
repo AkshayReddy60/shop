@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+      <div class="column" *ngFor="let realme of realmes">
+        <div class="card">
+          <mat-card [routerLink]="['/', realme.name]">
+            <img [src]="'./assets/' + realme.image" class="card-image">
+            <mat-card-content class="edit">
+              <p>{{ realme.name }}</p>
+              <p class="size">{{ realme.description }}</p>
+              <p>{{price}}</p>
+              <hr>
+              <p class="ed">show more details</p>
+            </mat-card-content>
+          </mat-card>
+          <button class="btn btn-primary" (click)="addToCart(realme)">Add Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>

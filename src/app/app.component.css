@@ -1,0 +1,16 @@
+.example-spacer {
+    flex: 1 1 auto;
+    
+}
+.button {
+    font-size: 16px; 
+    padding: 12px 24px;
+  }
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+  }

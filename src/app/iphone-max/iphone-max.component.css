@@ -1,0 +1,65 @@
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container img {
+    width: 500px; 
+    height: 600px; 
+    object-fit: cover;
+    margin: 5px;
+    display: none;
+}
+
+.container img.active {
+    display: block; 
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #007bff;
+    transition: color 0.3s;
+    
+}
+
+.nav-button:hover {
+    color: #0056b3;
+
+}
+
+
+
+
+.left {
+    left: 10px;
+}
+
+.right {
+    left: 600px;
+     
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column, .right-column {
+    width: 48%; 
+    margin: 30px;
+    
+        
+}
+.right-column{
+    margin-left: -120px;
+}
+

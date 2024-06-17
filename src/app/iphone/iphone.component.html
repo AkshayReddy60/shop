@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="column" *ngFor="let iphone of iphones">
+      <div class="card">
+        <mat-card [routerLink]="['/', iphone.name]">
+          <img [src]="'./assets/' + iphone.image" class="card-image">
+          <mat-card-content class="edit">
+            <p>{{ iphone.name }}</p>
+            <p class="size">{{ iphone.description }}</p>
+            <p>{{price}}</p>
+            <hr>
+            <p class="ed">show more details</p>
+          </mat-card-content>
+        </mat-card>
+        <button class="btn btn-primary" (click)="addToCart(iphone)">Add Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
